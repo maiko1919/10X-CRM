@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10X CRM | Sign Up</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>Create Account</h1>
+
+            <p class="subtitle">
+                Sign up to start using the CRM
+            </p>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small id="fullNameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company</label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="Enter your company name"
+                    >
+
+                    <small id="companyError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                    >
+
+                    <small id="passwordError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Repeat your password"
+                    >
+
+                    <small id="confirmPasswordError"></small>
+                </div>
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="bottom-text">
+                Already have an account?
+
+                <a href="index.html">
+                    Login
+                </a>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="./js/storage.js"></script>
+    <script src="./js/guard.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/signup.js"></script>
+    <script> redirectAuthenticatedUser();</script>
+
+</body>
+</html>

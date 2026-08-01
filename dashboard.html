@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>10X CRM | Dashboard</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-brand">
+            10X CRM
+        </div>
+
+        <nav class="nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="clients.html">Clients</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="themeButton" class="small-button" type="button">
+                Theme
+            </button>
+
+            <button id="logoutButton" class="small-button danger-button" type="button">
+                Logout
+            </button>
+        </div>
+    </header>
+
+    <main class="page-container">
+
+        <section class="welcome-section">
+            <div>
+                <h1 id="welcomeMessage">Welcome</h1>
+                <p>Here is your CRM overview.</p>
+            </div>
+
+            <div id="liveClock" class="clock"></div>
+        </section>
+
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <p>Total Clients</p>
+                <h2 id="totalClients">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Total Deal Value</p>
+                <h2 id="totalDealValue">$0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Won Clients</p>
+                <h2 id="wonClients">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <p>Lead Clients</p>
+                <h2 id="leadClients">0</h2>
+            </article>
+
+        </section>
+
+        <section class="content-card">
+            <h2>Sales Pipeline</h2>
+
+            <div class="pipeline-grid">
+                <div>
+                    <span>Lead</span>
+                    <strong id="leadCount">0</strong>
+                </div>
+
+                <div>
+                    <span>Contacted</span>
+                    <strong id="contactedCount">0</strong>
+                </div>
+
+                <div>
+                    <span>Won</span>
+                    <strong id="wonCount">0</strong>
+                </div>
+
+                <div>
+                    <span>Lost</span>
+                    <strong id="lostCount">0</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <div class="section-heading">
+                <h2>Recent Clients</h2>
+
+                <a href="clients.html">
+                    View All
+                </a>
+            </div>
+
+            <div id="recentClients">
+                <p>No clients found.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="toastContainer"></div>
+
+    <script src="./js/storage.js"></script>
+    <script src="./js/guard.js"></script>
+
+    <script>
+        protectPage();
+    </script>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/dashboard.js"></script>
+
+</body>
+</html>
