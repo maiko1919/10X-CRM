@@ -718,3 +718,24 @@ body.dark-theme {
         flex-direction: column;
     }
 }
+#recentClients {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recent-client-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 14px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.recent-client-item p {
+    margin-top: 5px;
+    color: var(--secondary-text);
+    font-size: 14px;
+}
