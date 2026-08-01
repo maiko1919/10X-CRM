@@ -61,9 +61,9 @@ This project was developed as the final JavaScript module project.
 
 ---
 
-## Live Demo
+### Live Demo
 
-Coming soon...
+https://10x-crm-maia.netlify.app
 
 ---
 
